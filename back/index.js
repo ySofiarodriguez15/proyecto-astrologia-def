@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 8080;
 require('./database/conexion')
 
 const app = express();
-res.header( "Access-Control-Allow-Origin" );
+
 const ConsultaControllers = require('./controllers/consultaC.js');
 
 app.use(express.json());
@@ -26,12 +26,7 @@ app.post('/crear', async (req, res) => {
     res.json('Consulta Creada')
 });
 
-app.delete('/:id', async (req, res) => {
-    console.log(req.params.id);
-    const id = req.params.id;
-    await ConsultaControllers.delete(id);
-    res.json('Consulta Eliminada')
-});
+
 
 
 app.listen(PORT, ()=>{
