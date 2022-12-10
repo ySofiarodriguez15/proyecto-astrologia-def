@@ -1,56 +1,83 @@
 
 import React, {useState} from 'react';
 import axios from 'axios';
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
-
+import { useEffect } from 'react';
+import Swal from 'sweetalert2';
 
 
 const Formulario=()=> {
-    const URL = 'http://localhost:3001/crear';
+    const URL = 'http://localhost:9000/crear';
 
-    const [inputs, setInputs] =useState({
-        nombre:"",
-        apellido:"",
-        motivo:"",
-        email:"",
+    const [values, setValues] = useState({
+        nombre: '',
+        apellido: '',
+        motivo:'',
+        email:''
     });
 
-        const handleClick = async () =>{
-            await axios.post(URL, inputs)
-            setInputs({
-                nombre:"",
-                apellido:"",
-                motivo:"",
-                email:""
-            })
-        }
+    useEffect(()=>{
+        console.log(values);
+    }, [values]);
+
+    const handleInputChange = (e) =>{
+        e.preventDefault();
+        setValues({
+            ...values,
+            [e.target.name]: e.target.value
+        })
+    }
+
+    useEffect(()=>{
+        console.log(values)
+    },[values]) 
+
+        const handleClick = async (e) =>{
+            e.preventDefault()
+            const response = await axios.post(URL, values)
+            console.log(response.status===200)
+            if (response.status===200){
+                Swal.fire({
+                    title: response.data,
+                    text: 'Gracias por enviar sus Datos',
+                    icon: 'success',
+                    confirmButtonText: 'Aceptar'
+                })
+            }
+
+        } 
         
     return ( 
-        <Form className="containerForm">
-        <Form.Group className="mb-3" controlId="formBasicPassword">
-            <Form.Label>Nombre</Form.Label>
-            <Form.Control type="string" placeholder="ej: Susana" />
-        </Form.Group>
-        <Form.Group className="mb-3" controlId="formBasicPassword">
-            <Form.Label>Apellido</Form.Label>
-            <Form.Control type="string" placeholder="Ej: González" />
-        </Form.Group>
-        <Form.Group className="mb-3" controlId="formBasicPassword">
-            <Form.Label>Contanos un poco más</Form.Label>
-            <Form.Control type="string" placeholder="Tu motivo de consulta" className ="placeMotivo" />
-        </Form.Group>
-        <Form.Group className="mb-5" controlId="formBasicEmail">
-            <Form.Label>Email</Form.Label>
-            <Form.Control type="string" placeholder="Tu email para comunicarnos" />
-            <Form.Text className="text-muted">
-            We'll never share your email with anyone else.
-            </Form.Text>
-        </Form.Group>
-        <Button variant="success" type="Enviar" className ="botonFormulario" onClick={handleClick}>
-            Enviar
-        </Button>
-        </Form>
+        <>
+        <h1>Formulario</h1>
+        <form onSubmit={handleClick}>
+            <input 
+                placeholder='Nombre'
+                name='nombre'
+                value={values.nombre}
+                onChange={handleInputChange}
+            />
+            <input 
+                placeholder='Apellido'
+                name='apellido'
+                value={values.apellido}
+                onChange={handleInputChange}
+            />
+                        <input 
+                placeholder='Motivo'
+                name='motivo'
+                value={values.motivo}
+                onChange={handleInputChange}
+            />
+                        <input 
+                placeholder='Email'
+                name='email'
+                value={values.email}
+                onChange={handleInputChange}
+            />
+            <button type='submit'>Enviar</button>
+        </form>
+    </>
+
             );
             };
 

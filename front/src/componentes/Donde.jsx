@@ -9,7 +9,7 @@ const Donde = ()=> {
 
     const [consultas, setConsultas] = useState([]);
 
-    const URL = 'http://localhost:3001/';
+    const URL = 'http://localhost:9000/';
 
     const getConsultas = async () => {
         try {
