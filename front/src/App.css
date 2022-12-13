@@ -134,6 +134,22 @@
 
 {/*Formulario*/}
 
+.bodyFormulario{
+  display: flexbox;
+  margin-bottom: 56px;
+  margin-top:56px;
+}
+
+.botonFormulario{
+  margin-top:50px;
+}
+
+
+.divFormulario{
+  margin: 15px 15px;
+  height:40px;
+  width: 300px;
+}
 .containerForm{
   margin-left: 750px;
   margin-right: 750px;

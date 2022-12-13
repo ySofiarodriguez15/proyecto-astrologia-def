@@ -48,33 +48,41 @@ const Formulario=()=> {
         
     return ( 
         <>
-        <h1>Formulario</h1>
-        <form onSubmit={handleClick}>
-            <input 
+        <h1>Completa tus datos</h1>
+        <form onSubmit={handleClick} className="bodyFormulario">
+            <div>
+            <input className='divFormulario'
                 placeholder='Nombre'
                 name='nombre'
                 value={values.nombre}
                 onChange={handleInputChange}
             />
-            <input 
+            </div>
+            <div>
+            <input className='divFormulario'
                 placeholder='Apellido'
                 name='apellido'
                 value={values.apellido}
                 onChange={handleInputChange}
             />
-                        <input 
+            </div>
+            <div>
+                        <input className='divFormulario'
                 placeholder='Motivo'
                 name='motivo'
                 value={values.motivo}
                 onChange={handleInputChange}
             />
-                        <input 
+            </div>
+            <div>
+                        <input className='divFormulario'
                 placeholder='Email'
                 name='email'
                 value={values.email}
                 onChange={handleInputChange}
             />
-            <button type='submit'>Enviar</button>
+            </div>
+            <button type='submit' className='botonFormulario'>Enviar</button>
         </form>
     </>
 
