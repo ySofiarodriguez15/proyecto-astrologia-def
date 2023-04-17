@@ -41,56 +41,58 @@
 /* css propio */
 
 
-.logo{
-  border-radius: 360px;
-  height: 200px;
-  width: 200px;
-  margin-right: 200px;
+.shake-little{
+  height: 230px;
+  width: 230px;
+  justify-content: center;
+  align-items: center;
+}
+
+.tituloPpal{
+  font-family: 'Playfair Display', serif;
+  font-size: 25px;
+  font-style: bold;
 }
 
 .divPpal{
-  margin-top: 27px;
-
+  margin-top: 1%;
 }
 
-.rowPpal{
-  height: 250px;
+.colLogo{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
-.titulo{
-  text-align: right;
-  align-content: flex-end;
-  margin-left: 120px;
-  margin-top: 80px;
+.colTituloPpal{
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  margin-right: 8%;
 }
 
 
-
-.h1Home{
-  margin-top: 50px;
-}
 .nav-item-dropdown{
   .list-style:none;
 }
 
 .dropdown-item:hover{
-  background-color:#73F574;
-  color:#A82D69;
+  background-color:#B6ADCF;
+  color:#6D2B91;
   border-radius: 13px;
 }
 
 .nav-link{
-  color: #E7FAD0;
+  color: #d397b4;
 }
 
 
 .navbarcolor{
-  background-color:#A82D69;
+  background-color:#3E197A;
   direction:ltr;
-  margin: 65px auto;
-  margin-right: 3px;
-  margin-left: 3px;
-  padding: 20px 20px;
+  margin-right: 3%;
+  margin-left: 3%;
+  padding: 2% 1.5%;
 
 }
 
@@ -108,28 +110,28 @@
 }
 
 .navbarcolor a:hover{
-  background-color: #d397b4;
-  color: #E7FAD0;
+  background-color: #B6ADCF;;
+  color: black;
   border-radius: 18px;
   
 }
 
 
 .me-auto{
-  background-color:#A82D69;
+  background-color:#6D2B91;
   color:#d397b4;
 }
 
 .container{
-  background-color:#A82D69;
+  background-color:#6D2B91;
 }
 
 .fondoNav{
-  background-color:#A82D69;
+  background-color:#6D2B91;
 }
 
 .fondo{
-  background-color:#A82D69;
+  background-color:#6D2B91;
 }
 
 {/*Formulario*/}
@@ -184,9 +186,20 @@
 
 .fotoCarousel{
   width: 600px;
-  height: 200;
+  height: 400px;
   justify-content: center;
 }
+
+.iconos-contacto{
+  width:30px;
+  height: 30px;
+}
+.display-iconos{
+  display: flex;
+  justify-content: center;
+  justify-content:space-between;
+}
+
 
 {/*About*/}
 
@@ -204,7 +217,7 @@
 
 .row{
   
-  background: #d397b4;
+  background: white;
   justify-content: center;
   padding: 30px 30px;
   border-radius: 52px;
@@ -255,3 +268,24 @@ li{
   margin-left: 130px;
 
 }
+
+/* Color Theme Swatches in Hex */
+.Plutonian-Vibes-1-hex { color: #23074D; }
+.Plutonian-Vibes-2-hex { color: #3E197A; }
+.Plutonian-Vibes-3-hex { color: #6D2B91; }
+.Plutonian-Vibes-4-hex { color: #B6ADCF; }
+.Plutonian-Vibes-5-hex { color: #1E1E24; }
+
+/* Color Theme Swatches in RGBA */
+.Plutonian-Vibes-1-rgba { color: rgba(35, 7, 77, 1); }
+.Plutonian-Vibes-2-rgba { color: rgba(62, 25, 122, 1); }
+.Plutonian-Vibes-3-rgba { color: rgba(109, 43, 145, 1); }
+.Plutonian-Vibes-4-rgba { color: rgba(182, 173, 207, 1); }
+.Plutonian-Vibes-5-rgba { color: rgba(30, 30, 36, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Plutonian-Vibes-1-hsla { color: hsla(264, 83, 16, 1); }
+.Plutonian-Vibes-2-hsla { color: hsla(262, 65, 28, 1); }
+.Plutonian-Vibes-3-hsla { color: hsla(278, 54, 36, 1); }
+.Plutonian-Vibes-4-hsla { color: hsla(255, 26, 74, 1); }
+.Plutonian-Vibes-5-hsla { color: hsla(240, 9, 12, 1); }

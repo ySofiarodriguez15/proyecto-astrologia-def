@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Carousel from 'react-bootstrap/Carousel';
 import React from 'react';
-import img1 from '../images/Fondo de Vídeo Degradado Color y Estilo Rojo Claro Verde Claro.png';
+import img1 from '../images/Carousel1.png';
 import img2 from '../images/neptunojupi.png'
 import img3 from '../images/plutonept.png';
 

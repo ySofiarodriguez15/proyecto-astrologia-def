@@ -10,22 +10,27 @@ import About from './componentes/About.jsx';
 import Servicios from './componentes/Servicios.jsx';
 import Donde from './componentes/Donde.jsx';
 import Footer from './componentes/Footer.jsx';
-import logo from './images/LOGO OK-editadono definitivo.jpg'
+import logo from './images/logonuevo.png'
+import 'csshake';
+
 
 
 function App() {
   return (
     <div className="App">
       <div className='divPpal'>
-      <Row  className='rowPpal'>
-        <Col >
-        <h1 className='titulo'>
-          BIENVENIDOS A PLUTON EN LINEA
-        </h1>  
+      <Row >
+        <Col className='colLogo'>
+          <img src={logo} alt="logoPagina" className='shake-little'/>
         </Col>
-
-        <Col>
-        <img src={logo} alt="logoPagina" className='logo'/>
+      </Row>
+      </div>
+      <div className='divPpalTitulo'>
+      <Row>
+        <Col className='colTituloPpal'>
+          <h1 className='tituloPpal'>
+            PLUTON EN LINEA - Astrología y Tarot
+          </h1>  
         </Col>
       </Row>
       </div>
