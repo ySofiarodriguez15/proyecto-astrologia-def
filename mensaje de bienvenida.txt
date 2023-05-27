@@ -15,3 +15,18 @@ Nos apasiona compartir contigo nuestra sabiduría astrológica y ayudarte a apro
 ¡Gracias por unirte a nuestra comunidad en [Nombre de tu página web]! Te deseamos un emocionante viaje de descubrimiento y transformación a través de la astrología y el estudio del inconsciente.
 
 Que los astros te iluminen en tu camino."
+
+</input>
+
+       <select name="motivo" id="motivo" value={values.motivo} onChange={handleInputChange}>
+                <option value="carta">Astrología</option>
+                <option value="tarot">Tarot Evolutivo</option>
+            </select>
+
+
+                <input className='divFormulario'
+                placeholder='Motivo'
+                name='motivo'
+                value={values.motivo}
+                onChange={handleInputChange}
+            />

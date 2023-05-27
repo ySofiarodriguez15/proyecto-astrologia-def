@@ -1,3 +1,17 @@
+@media screen and (max-width: 700px) {
+  .navbarcolor {
+  display: inline-block;
+}
+.bodyHome {
+  display: inline-block;
+}
+
+.body{
+  display: inline-block;
+}
+}
+
+
 .App {
   text-align: center;
 }
@@ -40,7 +54,34 @@
 
 /* css propio */
 
+.pHome{
+  color:whitesmoke
+}
 
+.textoHome{
+  margin-top: 160px;
+}
+
+.botonHome{
+  background-color:#B6ADCF;
+  padding: 0%;
+  border-radius: 10px;
+  height: 36px;
+  width: 305px;
+  justify-content: center;
+  align-items: center;
+}
+
+.h6ButonHome{
+  color:black;
+  font-size: larger;
+  align-items: center;
+}
+
+.imgHome{
+  width: 205%;
+  margin-left:0px;
+}
 .shake-little{
   height: 230px;
   width: 230px;
@@ -163,6 +204,12 @@
   background:#d397b4;
 }
 
+.descripcionForm{
+  height: 160px;
+  width: 625px;
+  text-align: center;
+}
+
 
 {/*Footer*/}
 
@@ -174,7 +221,7 @@
 
 .footer{
   margin-top: 150px;
-
+  background-color: #6D2B91;
 }
 
 

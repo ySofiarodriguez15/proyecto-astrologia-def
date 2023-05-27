@@ -6,7 +6,7 @@ import { Route, Routes} from "react-router-dom";
 import Navegacion from './componentes/Navegacion.jsx';
 import Home from './componentes/Home.jsx';
 import Formulario from './componentes/Formulario.jsx';
-import About from './componentes/About.jsx';
+import Blog from './componentes/Blog.jsx';
 import Servicios from './componentes/Servicios.jsx';
 import Donde from './componentes/Donde.jsx';
 import Footer from './componentes/Footer.jsx';
@@ -29,7 +29,7 @@ function App() {
       <Row>
         <Col className='colTituloPpal'>
           <h1 className='tituloPpal'>
-            PLUTON EN LINEA - Astrología y Tarot
+            PLUTON EN LINEA - Astrología y Tarot Evolutivo
           </h1>  
         </Col>
       </Row>
@@ -37,10 +37,9 @@ function App() {
         <Navegacion />
         <Routes>  
           <Route path="/" element = {<Home />} />
-          <Route path="About" element = {<About />} />
           <Route path="Servicios" element = {<Servicios />} />
-          <Route path="Donde" element = {<Donde />} />
           <Route path="Formulario" element = {<Formulario />} />
+          <Route path="Blog" element = {<Blog />} />
           
         </Routes> 
         

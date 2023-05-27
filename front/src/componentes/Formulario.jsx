@@ -3,7 +3,9 @@ import React, {useState} from 'react';
 import axios from 'axios';
 import { useEffect } from 'react';
 import Swal from 'sweetalert2';
-
+import Col from 'react-bootstrap/esm/Col';
+import Row from 'react-bootstrap/esm/Row';
+import FormSelect from 'react-bootstrap';
 
 const Formulario=()=> {
     const URL = 'http://localhost:9000/crear';
@@ -12,7 +14,8 @@ const Formulario=()=> {
         nombre: '',
         apellido: '',
         motivo:'',
-        email:''
+        email:'',
+        descripcion:''
     });
 
     useEffect(()=>{
@@ -48,16 +51,20 @@ const Formulario=()=> {
         
     return ( 
         <>
-        <h1>Completa tus datos</h1>
+        <h1 class="mt-5">Completa tus datos</h1>
         <form onSubmit={handleClick} className="bodyFormulario">
+            
             <div>
+            <Row className='m-0 p-0'>
+            <Col className='col-2'>
             <input className='divFormulario'
                 placeholder='Nombre'
                 name='nombre'
                 value={values.nombre}
                 onChange={handleInputChange}
             />
-            </div>
+            </Col>
+            <Col className='col-2'>
             <div>
             <input className='divFormulario'
                 placeholder='Apellido'
@@ -66,23 +73,46 @@ const Formulario=()=> {
                 onChange={handleInputChange}
             />
             </div>
+            
+            </Col>
+            </Row>
+            <Row className='m-0 p-0'>
+            <Col className='col-2 m-0'>
             <div>
-                        <input className='divFormulario'
+            <input className='divFormulario'
                 placeholder='Motivo'
                 name='motivo'
                 value={values.motivo}
                 onChange={handleInputChange}
             />
+
             </div>
+            </Col>
+            <Col className='col-2 m-0'>
             <div>
-                        <input className='divFormulario'
+                <input className='divFormulario'
                 placeholder='Email'
                 name='email'
                 value={values.email}
                 onChange={handleInputChange}
             />
             </div>
-            <button type='submit' className='botonFormulario'>Enviar</button>
+            </Col>
+            </Row>
+            <Row className='justify-content-center'>
+                <Col className='col-4'>
+                    <input class="descripcionForm"
+                        placeholder='Contános un poco más'
+                        name='descripcion'
+                        value={values.descripcion}
+                        onChange={handleInputChange}
+                    />
+
+                </Col>
+            </Row>
+
+            </div>
+            <button type='submit' className='botonHome'>Enviar</button>
         </form>
     </>
 

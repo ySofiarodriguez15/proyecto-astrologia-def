@@ -1,41 +1,49 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Carousel from 'react-bootstrap/Carousel';
+import Nav from 'react-bootstrap/Nav';
+import Button from 'react-bootstrap/Button';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import React from 'react';
 import img1 from '../images/Carousel1.png';
-import img2 from '../images/neptunojupi.png'
-import img3 from '../images/plutonept.png';
+
 
 
 
 
 function Home() {
     return (
-        <Carousel variant="dark" className = "carousel">
-        <Carousel.Item>
-            <img
-            className="fotoCarousel"
-            src={img1}
-            alt="First slide"
-            />
+        <div className='bodyHome'>
+        <Row>
+            <Col className="col-6">
+                    <img src={img1} alt="Imágen no disponible" className='imgHome' height={950}/>
+            </Col>
+            <Col className="col-6">
+                <div>
+                    <h1 className='pHome'> Una guía para explorar el misterioso mundo del inconsciente y la astrología</h1>
+                    <p className='pHome'> Aquí encontrarás un espacio dedicado a explorar el apasionante mundo del tarot y la astrología. Nuestro objetivo es brindarte una experiencia enriquecedora y profunda que te permita comprender y aprovechar el poder transformador de estas disciplinas. En Plutón en Línea te ofrecemos algunos servicios para ayudarte en tu camino de autoconocimiento. ¿Te gustaría descubrir las misteriosas influencias astrológicas en tu vida a través de una consulta de carta natal personalizada? Estamos disponibles para ofrecerte lecturas e interpretaciones que te ayudarán a comprender tus fortalezas, debilidades y potencialidades.
+                        Además, también te invitamos a explorar nuestro servicio de tarot evolutivo, una herramienta poderosa para acceder a tu sabiduría interior y obtener una comprensión más profunda de tus desafíos y oportunidades. Nuestros tarotistas experimentados te guiarán en un viaje de autoexploración y crecimiento personal.
+                        En Plutón en línea, la astrología es más que una simple disciplina, es una herramienta para la transformación y el autodescubrimiento. Te invitamos a sumergirte en el fascinante mundo del zodíaco, los planetas, las casas astrológicas y las poderosas energías de Plutón, que simbolizan la transformación profunda y el renacimiento del alma.
+                        Nos apasiona compartir contigo nuestra sabiduría astrológica y ayudarte a aprovechar al máximo su potencial en tu vida cotidiana. Explora nuestros contenidos y servicios, y déjanos guiarte en tu viaje de exploración interna y crecimiento personal.
+                        ¡Gracias por unirte a nuestra comunidad! Te deseamos un emocionante viaje de descubrimiento y transformación a través de la astrología y el tarot evolutivo.
+                        Que los astros te iluminen en tu camino.</p>
+                </div>
+                </Col>
 
-        </Carousel.Item>
-        <Carousel.Item>
-            <img
-            className="fotoCarousel"
-            src={img2}
-            alt="Second slide"
-            />
+        </Row>
 
-        </Carousel.Item>
-        <Carousel.Item>
-            <img
-            className="fotoCarousel"
-            src={img3}
-            alt="Third slide"
-            />
-
-        </Carousel.Item>
-        </Carousel>
+        <Row>
+            <Col className="col-6 fw-normal">
+                <h4>Alguna consulta? No dudes en preguntarnos!</h4>
+            </Col>
+        </Row>      
+        <Row>
+            <Col className="col-6">
+                <button className='botonHome'>
+                    <Nav.Link href="Formulario"><h6 className='h6ButonHome'>Click aquí para consultas</h6></Nav.Link>
+                </button>
+            </Col>
+        </Row>
+        </div>
     );
 }
 
