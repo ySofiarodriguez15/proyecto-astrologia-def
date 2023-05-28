@@ -18,17 +18,17 @@ import 'csshake';
 function App() {
   return (
     <div className="App">
-      <div className='divPpal'>
-      <Row >
-        <Col className='colLogo'>
+      <div class="container justify-content-center">
+      <Row>
+        <Col className='p-1'>
           <img src={logo} alt="logoPagina" className='shake-little'/>
         </Col>
       </Row>
       </div>
-      <div className='divPpalTitulo'>
+      <div >
       <Row>
         <Col className='colTituloPpal'>
-          <h1 className='tituloPpal'>
+          <h1 className='tituloPpal' class='text-center fw-normal p-2'>
             PLUTON EN LINEA - Astrología y Tarot Evolutivo
           </h1>  
         </Col>

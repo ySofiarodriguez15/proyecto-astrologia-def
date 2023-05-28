@@ -5,7 +5,7 @@ import { useEffect } from 'react';
 import Swal from 'sweetalert2';
 import Col from 'react-bootstrap/esm/Col';
 import Row from 'react-bootstrap/esm/Row';
-import FormSelect from 'react-bootstrap';
+
 
 const Formulario=()=> {
     const URL = 'http://localhost:9000/crear';
@@ -51,58 +51,61 @@ const Formulario=()=> {
         
     return ( 
         <>
-        <h1 class="mt-5">Completa tus datos</h1>
-        <form onSubmit={handleClick} className="bodyFormulario">
-            
-            <div>
-            <Row className='m-0 p-0'>
-            <Col className='col-2'>
+        <h1 class="mt-5 mb-4 text-center">Completa tus datos</h1>
+        <form onSubmit={handleClick} className="bodyFormulario" class="container">
+            <div >
+            <Row className='m-1 p-0' class="justify-content-center display">
+            <Col className='col-2 mb-2'>
             <input className='divFormulario'
+                class="justify-content-evenly"
                 placeholder='Nombre'
                 name='nombre'
                 value={values.nombre}
                 onChange={handleInputChange}
             />
             </Col>
-            <Col className='col-2'>
-            <div>
+            <Col className='col-2 mb-2'>
+            
             <input className='divFormulario'
+                class="justify-content-center"
                 placeholder='Apellido'
                 name='apellido'
                 value={values.apellido}
                 onChange={handleInputChange}
             />
-            </div>
+            
             
             </Col>
             </Row>
-            <Row className='m-0 p-0'>
-            <Col className='col-2 m-0'>
-            <div>
+            <Row className='m-1 p-0' class="justify-content-center display">
+            <Col className='col-2 mb-1'>
+            
             <input className='divFormulario'
+
                 placeholder='Motivo'
                 name='motivo'
                 value={values.motivo}
                 onChange={handleInputChange}
             />
 
-            </div>
+            
             </Col>
             <Col className='col-2 m-0'>
-            <div>
+            
                 <input className='divFormulario'
+                class="justify-content-evenly"
                 placeholder='Email'
                 name='email'
                 value={values.email}
                 onChange={handleInputChange}
             />
-            </div>
             </Col>
             </Row>
-            <Row className='justify-content-center'>
-                <Col className='col-4'>
+            <div class="container mt-4">
+            <Row class="justify-content-center">
+                <Col className='col-4' >
                     <input class="descripcionForm"
-                        placeholder='Contános un poco más'
+                        placeholder='Contanos un poco más'
                         name='descripcion'
                         value={values.descripcion}
                         onChange={handleInputChange}
@@ -110,9 +113,11 @@ const Formulario=()=> {
 
                 </Col>
             </Row>
-
             </div>
+            </div>
+            <div class="mt-4">
             <button type='submit' className='botonHome'>Enviar</button>
+            </div>
         </form>
     </>
 
