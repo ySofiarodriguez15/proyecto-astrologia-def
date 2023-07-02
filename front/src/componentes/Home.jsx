@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import React from 'react';
-import img1 from '../images/Carousel1.png';
+import img1 from '../images/Home.png';
 
 
 
