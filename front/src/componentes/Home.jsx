@@ -12,12 +12,15 @@ import img1 from '../images/Carousel1.png';
 
 function Home() {
     return (
-        <div className='bodyHome'>
+        <div class="container">
         <Row>
-            <Col className="col-6">
-                    <img src={img1} alt="Imágen no disponible" className='imgHome' height={950}/>
-            </Col>
-            <Col className="col-6">
+            <div class="container">
+                <Col className="col-12">
+                        <img src={img1} alt="Imágen no disponible" height={950} class="imgResponsive"/>
+                </Col>
+            </div>
+
+            <Col className="col-12">
                 <div>
                     <h1 className='pHome'> Una guía para explorar el misterioso mundo del inconsciente y la astrología</h1>
                     <p className='pHome'> Aquí encontrarás un espacio dedicado a explorar el apasionante mundo del tarot y la astrología. Nuestro objetivo es brindarte una experiencia enriquecedora y profunda que te permita comprender y aprovechar el poder transformador de estas disciplinas. En Plutón en Línea te ofrecemos algunos servicios para ayudarte en tu camino de autoconocimiento. ¿Te gustaría descubrir las misteriosas influencias astrológicas en tu vida a través de una consulta de carta natal personalizada? Estamos disponibles para ofrecerte lecturas e interpretaciones que te ayudarán a comprender tus fortalezas, debilidades y potencialidades.
@@ -32,12 +35,12 @@ function Home() {
         </Row>
 
         <Row>
-            <Col className="col-6 fw-normal">
+            <Col className="col-12 fw-normal">
                 <h4>Alguna consulta? No dudes en preguntarnos!</h4>
             </Col>
         </Row>      
         <Row>
-            <Col className="col-6">
+            <Col className="col-12">
                 <button className='botonHome'>
                     <Nav.Link href="Formulario"><h6 className='h6ButonHome'>Click aquí para consultas</h6></Nav.Link>
                 </button>

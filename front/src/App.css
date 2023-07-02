@@ -19,7 +19,13 @@
   pointer-events: none;
 }
 
-
+.imgResponsive{
+  max-width: 100%;
+  height: auto;
+  margin-top: 26px;
+  margin-bottom: 26px;
+  border-radius: 7px;
+}
 
 .App-header {
   background-color: #282c34;
@@ -49,7 +55,11 @@
 /* css propio */
 
 .pHome{
-  color:whitesmoke
+  color:black;
+  text-align: center;
+  padding: 2px;
+  margin: 2px;
+  margin-bottom: 20px;
 }
 
 .textoHome{
@@ -64,6 +74,7 @@
   width: 305px;
   justify-content: center;
   align-items: center;
+  margin-top: 16px;
 }
 
 .h6ButonHome{
@@ -110,14 +121,15 @@
 
 .nav-link{
   color: #d397b4;
+  align-items: baseline;
 }
 
 
 .navbarcolor{
   background-color:#3E197A;
-  
-  padding: 1%;
+  padding: 0.5%;
   align-content: center;
+  box-shadow: 10px 5px 5px black;
 
 }
 
@@ -163,12 +175,13 @@
 }
 
 .descripcionForm{
-  height: 160px;
-  width: 250px;
-  text-align: center;
+  height: 120px;
+  border-radius: 3px;
 }
 
-
+.inputForm{
+  border-radius:3px;
+}
 {/*Footer*/}
 
 .textoFooter{

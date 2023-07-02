@@ -51,74 +51,91 @@ const Formulario=()=> {
         
     return ( 
         <>
+        
         <h1 class="mt-5 mb-4 text-center">Completa tus datos</h1>
-        <form onSubmit={handleClick} className="bodyFormulario" class="container">
-            <div >
-            <Row className='m-1 p-0' class="justify-content-center display">
-            <Col className='col-2 mb-2'>
-            <input className='divFormulario'
-                class="justify-content-evenly"
+        <form onSubmit={handleClick} class="container">
+            <Row className='m-0 p-0'>
+            <div class="container">
+            <Col className='col-12 mb-1'>
+            <input
+                class="inputForm"
                 placeholder='Nombre'
                 name='nombre'
                 value={values.nombre}
                 onChange={handleInputChange}
             />
             </Col>
-            <Col className='col-2 mb-2'>
-            
-            <input className='divFormulario'
-                class="justify-content-center"
-                placeholder='Apellido'
-                name='apellido'
-                value={values.apellido}
-                onChange={handleInputChange}
-            />
-            
-            
-            </Col>
-            </Row>
-            <Row className='m-1 p-0' class="justify-content-center display">
-            <Col className='col-2 mb-1'>
-            
-            <input className='divFormulario'
+            </div>
 
-                placeholder='Motivo'
-                name='motivo'
-                value={values.motivo}
-                onChange={handleInputChange}
-            />
 
-            
-            </Col>
-            <Col className='col-2 m-0'>
-            
-                <input className='divFormulario'
-                class="justify-content-evenly"
-                placeholder='Email'
-                name='email'
-                value={values.email}
-                onChange={handleInputChange}
-            />
-            </Col>
-            </Row>
-            <div class="container mt-4">
-            <Row class="justify-content-center">
-                <Col className='col-4' >
-                    <input class="descripcionForm"
-                        placeholder='Contanos un poco más'
-                        name='descripcion'
-                        value={values.descripcion}
+            <div class="container">
+                <Col className='col-12 mb-1'>
+                    <input
+                        class="inputForm"
+                        placeholder='Apellido'
+                        name='apellido'
+                        value={values.apellido}
                         onChange={handleInputChange}
-                    />
-
+                    />      
                 </Col>
+            </div>
+            
+            </Row>
+
+            <div>
+            <Row className='m-0 p-0'>
+                <div class="container">
+                    <Col className='col-12 mb-1'>
+                
+                        <input
+                            class="inputForm"
+                            placeholder='Motivo'
+                            name='motivo'
+                            value={values.motivo}
+                            onChange={handleInputChange}
+                        />
+                    </Col>
+                </div>
+            <div class="container">
+                <Col className='col-12 mt-0 mb-1'>
+                        
+                        <input
+                        class="inputForm"
+                        placeholder='Email'
+                        name='email'
+                        value={values.email}
+                        onChange={handleInputChange}
+                        />
+                </Col>
+            </div> 
             </Row>
             </div>
-            </div>
+
+            
+            <Row>
+                <div class="container">
+                    <Col className='col-12' >
+                        <input
+                            class="descripcionForm"
+                            placeholder='Contanos un poco más'
+                            name='descripcion'
+                            value={values.descripcion}
+                            onChange={handleInputChange}
+                        />
+
+                    </Col>
+                </div>
+            </Row>
+            
             <div class="mt-4">
-            <button type='submit' className='botonHome'>Enviar</button>
+                <Row>
+                    <Col className='col-12'>
+                        <button type='submit' className='botonHome'>Enviar</button>
+                    </Col>
+                </Row>
             </div>
         </form>
+        
     </>
 
             );
