@@ -62,10 +62,10 @@ function About() {
 
                 </div>
 
-                <nav className="linkAbout">
-                    <Button className="primary">
-                    <Link to= "/" className="botonAbout"> Home </Link>
-                    </Button>
+                <nav>
+                    <button className="botonHome">
+                    <a href= "/" className="text-dark"> Home </a>
+                    </button>
                 </nav>
 
         

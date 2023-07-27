@@ -15,6 +15,7 @@ const Formulario=()=> {
         apellido: '',
         motivo:'',
         email:'',
+        telefono:'',
         descripcion:''
     });
 
@@ -108,6 +109,20 @@ const Formulario=()=> {
                         />
                 </Col>
             </div> 
+
+            <div class="container">
+                <Col className='col-12 mt-0 mb-1'>
+                        
+                        <input
+                        class="inputForm"
+                        placeholder='Teléfono/Celular'
+                        name='telefono'
+                        value={values.telefono}
+                        onChange={handleInputChange}
+                        />
+                </Col>
+            </div> 
+
             </Row>
             </div>
 
