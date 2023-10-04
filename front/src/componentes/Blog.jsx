@@ -30,6 +30,8 @@ function About() {
                         </div>
                     </div>
                     <div class="row container">
+
+
                     <div class="col-md-8">
                         <article class="blog-post mt-5">
                         <h2 class="display-5 link-body-emphasis mb-1">New feature</h2>
@@ -39,6 +41,8 @@ function About() {
                         <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
                         </article>
                     </div>
+
+                    
                     <div class="col-md-4 mt-0">
                     <div class="p-4">
                         <h4 class="fst-italic">Archivos</h4>

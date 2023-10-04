@@ -20,10 +20,10 @@ function Footer() {
                 <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
                     <div className='display-iconos'>
                         <div>
-                            <li class="ms-3"><a className="text-muted" href="mailto:astroplutonia@gmail.com"><img src={gmail} alt='imagen no disponible' class ="iconos-contacto"/></a></li>
+                            <li class="ms-3"><a className="text-muted" href="mailto:plutonenlinea@gmail.com"><img src={gmail} alt='imagen no disponible' class ="iconos-contacto"/></a></li>
                         </div>
                         <div>
-                            <li class="ms-3"><a className="text-muted" href="tel:+541162433000"><img src={whatsapp} alt='imagen no disponible' class ="iconos-contacto" /></a></li>
+                            <li class="ms-3"><a className="text-muted" href="tel:+541150463261"><img src={whatsapp} alt='imagen no disponible' class ="iconos-contacto" /></a></li>
                         </div>
                     </div>
                 </ul>
